@@ -5,12 +5,15 @@ This is a collection of tiny libs and tools i build in vanilla node.js, with no 
 
 ### LIB / TOOLS 
 
-##### Select-Options
+#### Select-Options
 
 This is one of the tools i implemented while digging deeper into node.js. Built entirely in node.js
 with no external tools or libraries. This basically allows you to select from a list of options. This is not fully optimal and is for illustration/learning purpose.
 
-###### How i built the select-options
+![preview](https://github.com/vanderkilu/snippets/blob/master/select-options.png)
+
+
+##### How i built the select-options
 The core of the program is the `readline.emitKeyPressEvents(stream)` method of the `readline` module.The `readline module` is one of the standard(inbuilt) node.js lib that enables you to read from the console. The `readline.emitKeyPressEvents(stream)` enables you to listen to keyboard events on a stream.
 The stream in our case is the standard input(we will be reading from the console), that is `process.stdin`. We can listen to input from the `process.stdin` by subscribing to the keypress event. That is `process.stdin.on(keypress, keyPressedHandler)`. Below is a code sample for subscribing and listening to the keyboard event on the standard input.
 
