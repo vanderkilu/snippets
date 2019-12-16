@@ -27,7 +27,7 @@ const keyPressedHandler = (_, key) => {
 }
 
 const ansiEraseLines = (count) => {
-    //adapted from sinehrous ansi-escape module
+    //adapted from sindresorhus ansi-escape module
     const ESC = '\u001B['
     const eraseLine = ESC + '2K';
     const cursorUp = (count = 1) => ESC + count + 'A'
