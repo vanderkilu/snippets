@@ -1,6 +1,6 @@
 ### NODE-SNIPPETS
 
-This is a collection of tiny libs and tools i build in vanilla node.js, no npm, no external frameworks in order to get a deeper understanding of node and its inbuilt libraries. I will be penning down how i implemented some of these libs/tools
+This is a collection of tiny libs and tools i build in vanilla node.js, with no npm, no external frameworks in order to get a deeper understanding of node and its inbuilt libraries. I will be penning down how i implemented some of these libs/tools
 
 
 ### LIB / TOOLS 
@@ -8,7 +8,7 @@ This is a collection of tiny libs and tools i build in vanilla node.js, no npm, 
 ##### Select-Options
 
 This is one of the tools i implemented while digging deeper into node.js. Built entirely in node.js
-with no external tools or libraries. This basically allows you to select from a list of options.
+with no external tools or libraries. This basically allows you to select from a list of options. This is not fully optimal and is for illustration/learning purpose.
 
 ###### How i built the select-options
 The core of the program is the `readline.emitKeyPressEvents(stream)` method of the `readline` module.The `readline module` is one of the standard(inbuilt) node.js lib that enables you to read from the console. The `readline.emitKeyPressEvents(stream)` enables you to listen to keyboard events on a stream.
@@ -44,7 +44,7 @@ const keyPressedHandler = (_, key) => {
 
 
 This code sample increase/decrease the selectIndex or quit the application based on the key pressed.
-The `selectIndex` will later be used as the index for choosing the selected option later. Once we have the `selectIndex` we create the option Menu. The sample code for creating the option menu is indicated below.
+The `selectIndex` will later be used as the index for choosing the selected option. Once we have the `selectIndex` we create the option Menu. The sample code for creating the option menu is indicated below.
 
 ```js
 selectOption.createOptionMenu = () => {
