@@ -72,7 +72,7 @@ selectOption.createOptionMenu = () => {
     }
 }
 ```
-The most important part of the sample code is the part labelled in the comment from `1 -5`. What we are doing is selecting the chosen option by comparing `selectIndex` to `i`, our current iteration index. If they are the same the we concatenate our selector, indicated by `*` with the selected option else we just get the option at the current iteration. We then place each option(selected or unselected) option on a different line except the last one. We finally write to the console.
+The most important part of the sample code is the part labelled in the comment from `1 -5`. What we are doing is selecting the chosen option by comparing `selectIndex` to `i`, our current iteration index. If they are the same then we concatenate our selector, indicated by `*` with the selected option else we just get the option at the current iteration. We then place each option(selected or unselected) option on a different line except the last one. We finally write to the console.
 
 Additional code samples like 
 ```js
@@ -116,7 +116,7 @@ const ansiColors = (text, color) => {
 ```
 is used for generating console colors.
 
-Read the select-options source [here](./selectOptions/index.js) to get a clear glimpse into how i implemented it. 
+Read the full select-options source [here](./selectOptions/index.js) to get a clear glimpse into how i implemented it. 
 
 
 
